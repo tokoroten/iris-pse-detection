@@ -1,5 +1,5 @@
 [project]
-name = "iris-py"
+name = "iris-pse-detection"
 version = "1.0.0"
 description = "Python port of EA's IRIS - Photosensitive epilepsy risk detection for video content"
 readme = "README.md"
@@ -30,9 +30,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/electronicarts/IRIS"
-Repository = "https://github.com/electronicarts/IRIS"
-"Original Project" = "https://github.com/electronicarts/IRIS"
+Homepage = "https://github.com/tokoroten/iris-py"
+Repository = "https://github.com/tokoroten/iris-py"
+"Original C++ Project" = "https://github.com/electronicarts/IRIS"
 
 [project.optional-dependencies]
 dev = [

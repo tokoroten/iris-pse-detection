@@ -66,11 +66,7 @@ C++ と Python で微小な差異が発生する場合があります（境界�
 
 ## C++ 版との比較
 
-オリジナル C++ 版: `C:\Users\shinta\Documents\GitHub\iris`
-
-比較用スクリプト:
-- `debug_luminance.py` - 輝度値の比較
-- `debug_srgb_values.py` - sRGB LUT の比較
+オリジナル C++ 版: https://github.com/electronicarts/IRIS
 
 ## ライセンス
 

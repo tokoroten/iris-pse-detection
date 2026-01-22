@@ -5,7 +5,7 @@
 
 Python port of [IRIS](https://github.com/electronicarts/IRIS) - Electronic Arts' photosensitive epilepsy risk detection library.
 
-IRIS analyzes video content to detect flash patterns that may trigger seizures in people with photosensitive epilepsy, based on guidelines from W3C WCAG and ISO 9241-391.
+IRIS analyzes video content to detect flash patterns that may trigger seizures in people with photosensitive epilepsy, aiming to implement detection methods described in W3C WCAG and ISO 9241-391.
 
 ## Installation
 
@@ -53,6 +53,10 @@ Due to floating-point precision differences between C++ and Python/NumPy, result
 ## Acknowledgments
 
 This project is a Python port of [IRIS](https://github.com/electronicarts/IRIS) by Electronic Arts Inc., originally released under the BSD 3-Clause License.
+
+## Disclaimer
+
+This software is provided for informational purposes only and should not be used as the sole method for ensuring video content safety. While this implementation is based on the original IRIS library, no guarantee is made regarding accuracy or compliance with any standards. Always consult with accessibility experts and conduct proper testing for production use.
 
 ## Links
 

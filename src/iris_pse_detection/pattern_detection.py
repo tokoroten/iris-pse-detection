@@ -7,9 +7,10 @@
 """Pattern detection for IRIS analysis using Fourier transform."""
 
 from dataclasses import dataclass, field
-from typing import List, Tuple, Optional
-import numpy as np
+from typing import List, Tuple
+
 import cv2
+import numpy as np
 
 from iris_pse_detection.configuration import PatternDetectionParams
 from iris_pse_detection.frame_data import FrameData, proportion_to_percentage

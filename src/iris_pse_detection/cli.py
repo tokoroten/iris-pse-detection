@@ -102,9 +102,10 @@ def main():
         print(f"Analysis Time: {result.analysis_time} ms")
 
         if result.total_luminance_incidents.total_failed_frames > 0:
-            print(f"\nLuminance Flash Failures: {result.total_luminance_incidents.flash_fail_frames}")
-            print(f"Luminance Extended Failures: {result.total_luminance_incidents.extended_fail_frames}")
-            print(f"Luminance Warnings: {result.total_luminance_incidents.pass_with_warning_frames}")
+            lum = result.total_luminance_incidents
+            print(f"\nLuminance Flash Failures: {lum.flash_fail_frames}")
+            print(f"Luminance Extended Failures: {lum.extended_fail_frames}")
+            print(f"Luminance Warnings: {lum.pass_with_warning_frames}")
 
         if result.total_red_incidents.total_failed_frames > 0:
             print(f"\nRed Flash Failures: {result.total_red_incidents.flash_fail_frames}")

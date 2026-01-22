@@ -10,9 +10,9 @@ from collections import deque
 from dataclasses import dataclass, field
 from typing import Deque
 
+from iris_pse_detection.configuration import TransitionTrackerParams
 from iris_pse_detection.frame_data import FrameData
 from iris_pse_detection.result import FlashResult, TotalFlashIncidents
-from iris_pse_detection.configuration import TransitionTrackerParams
 
 
 @dataclass
@@ -155,14 +155,14 @@ class TransitionTracker:
         data.red_transitions = self.red_transition_count.update_current(red_transition)
 
         # Update extended failure counts
-        lum_in_range = (
-            self.params.min_transitions <= self.luminance_transition_count.current <= self.params.max_transitions
+        lum_count = self.luminance_transition_count.current
+        lum_in_range = self.params.min_transitions <= lum_count <= self.params.max_transitions
+        data.luminance_extended_fail_count = self.luminance_extended_count.update_current(
+            lum_in_range
         )
-        data.luminance_extended_fail_count = self.luminance_extended_count.update_current(lum_in_range)
 
-        red_in_range = (
-            self.params.min_transitions <= self.red_transition_count.current <= self.params.max_transitions
-        )
+        red_count = self.red_transition_count.current
+        red_in_range = self.params.min_transitions <= red_count <= self.params.max_transitions
         data.red_extended_fail_count = self.red_extended_count.update_current(red_in_range)
 
     def evaluate_frame_moment(self, data: FrameData) -> None:

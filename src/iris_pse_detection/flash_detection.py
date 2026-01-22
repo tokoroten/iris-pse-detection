@@ -7,10 +7,11 @@
 """Flash detection orchestration for IRIS analysis."""
 
 from typing import Tuple
+
 import numpy as np
 
 from iris_pse_detection.configuration import Configuration
-from iris_pse_detection.flash import RelativeLuminance, RedSaturation, Flash
+from iris_pse_detection.flash import Flash, RedSaturation, RelativeLuminance
 from iris_pse_detection.frame_data import FrameData, proportion_to_percentage
 from iris_pse_detection.frame_rgb_converter import FrameRgbConverter
 from iris_pse_detection.transition_tracker import TransitionTracker

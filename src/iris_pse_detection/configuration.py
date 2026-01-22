@@ -9,9 +9,8 @@
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Optional
-import numpy as np
 
+import numpy as np
 
 # Default sRGB lookup table values (256 entries for 0-255 input)
 DEFAULT_SRGB_VALUES = [
@@ -143,7 +142,9 @@ class Configuration:
     frame_resize_proportion: float = 0.2
 
     # sRGB lookup table
-    srgb_values: np.ndarray = field(default_factory=lambda: np.array(DEFAULT_SRGB_VALUES, dtype=np.float32))
+    srgb_values: np.ndarray = field(
+        default_factory=lambda: np.array(DEFAULT_SRGB_VALUES, dtype=np.float32)
+    )
 
     # Output paths
     results_path: str = "Results/"
@@ -208,16 +209,26 @@ class Configuration:
             tt = data["TransitionTracker"]
             config.max_transitions = tt.get("MaxTransitions", config.max_transitions)
             config.min_transitions = tt.get("MinTransitions", config.min_transitions)
-            config.extended_fail_seconds = tt.get("ExtendedFailSeconds", config.extended_fail_seconds)
-            config.extended_fail_window = tt.get("ExtendedFailWindow", config.extended_fail_window)
-            config.warning_transitions = tt.get("WarningTransitions", config.warning_transitions)
+            config.extended_fail_seconds = tt.get(
+                "ExtendedFailSeconds", config.extended_fail_seconds
+            )
+            config.extended_fail_window = tt.get(
+                "ExtendedFailWindow", config.extended_fail_window
+            )
+            config.warning_transitions = tt.get(
+                "WarningTransitions", config.warning_transitions
+            )
 
         # Pattern detection settings
         if "PatternDetection" in data:
             pd = data["PatternDetection"]
             config.pattern_min_stripes = pd.get("MinStripes", config.pattern_min_stripes)
-            config.pattern_time_threshold = pd.get("TimeThreshold", config.pattern_time_threshold)
-            config.pattern_area_proportion = pd.get("AreaProportion", config.pattern_area_proportion)
+            config.pattern_time_threshold = pd.get(
+                "TimeThreshold", config.pattern_time_threshold
+            )
+            config.pattern_area_proportion = pd.get(
+                "AreaProportion", config.pattern_area_proportion
+            )
             config.pattern_dark_luminance_threshold = pd.get(
                 "RelativeDarkLuminanceThreshold", config.pattern_dark_luminance_threshold
             )

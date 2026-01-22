@@ -7,7 +7,6 @@
 """Frame data structures for IRIS analysis."""
 
 from dataclasses import dataclass
-from typing import List
 
 from iris_pse_detection.result import FlashResult, PatternResult
 

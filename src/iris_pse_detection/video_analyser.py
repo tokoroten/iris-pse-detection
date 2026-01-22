@@ -10,7 +10,8 @@ import json
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional, List, Callable, Tuple
+from typing import Callable, List, Optional, Tuple
+
 import cv2
 import numpy as np
 
@@ -18,7 +19,7 @@ from iris_pse_detection.configuration import Configuration
 from iris_pse_detection.flash_detection import FlashDetection
 from iris_pse_detection.frame_data import FrameData
 from iris_pse_detection.pattern_detection import PatternDetection
-from iris_pse_detection.result import Result, AnalysisResult
+from iris_pse_detection.result import AnalysisResult, Result
 
 
 @dataclass
@@ -94,7 +95,7 @@ class VideoAnalyser:
             num_frames = 0
             last_percentage = 0
 
-            print(f"Video analysis started")
+            print("Video analysis started")
             start_time = time.time()
 
             # Data collection
@@ -148,7 +149,7 @@ class VideoAnalyser:
 
             end_time = time.time()
             elapsed_ms = int((end_time - start_time) * 1000)
-            print(f"Video analysis ended")
+            print("Video analysis ended")
             print(f"Elapsed time: {elapsed_ms} ms")
 
             # Build result

@@ -1,6 +1,6 @@
 [project]
 name = "iris-pse-detection"
-version = "1.1.1"
+version = "1.1.2"
 description = "Python port of EA's IRIS - Photosensitive epilepsy risk detection for video content"
 readme = "README.md"
 requires-python = ">=3.10"

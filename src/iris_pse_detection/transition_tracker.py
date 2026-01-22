@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -10,9 +10,9 @@ from collections import deque
 from dataclasses import dataclass, field
 from typing import Deque
 
-from iris_py.frame_data import FrameData
-from iris_py.result import FlashResult, TotalFlashIncidents
-from iris_py.configuration import TransitionTrackerParams
+from iris_pse_detection.frame_data import FrameData
+from iris_pse_detection.result import FlashResult, TotalFlashIncidents
+from iris_pse_detection.configuration import TransitionTrackerParams
 
 
 @dataclass

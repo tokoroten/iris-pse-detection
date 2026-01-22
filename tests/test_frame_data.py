@@ -1,12 +1,12 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for FrameData class."""
 
 import pytest
 
-from iris_py.frame_data import FrameData, ms_to_timespan, proportion_to_percentage
-from iris_py.result import FlashResult, PatternResult
+from iris_pse_detection.frame_data import FrameData, ms_to_timespan, proportion_to_percentage
+from iris_pse_detection.result import FlashResult, PatternResult
 
 
 class TestMsToTimespan:

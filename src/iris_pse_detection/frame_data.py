@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -9,7 +9,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from iris_py.result import FlashResult, PatternResult
+from iris_pse_detection.result import FlashResult, PatternResult
 
 
 def ms_to_timespan(ms: int) -> str:

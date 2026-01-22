@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for Flash classes (RelativeLuminance and RedSaturation)."""
@@ -6,8 +6,8 @@
 import numpy as np
 import pytest
 
-from iris_py.flash import RelativeLuminance, RedSaturation, Flash
-from iris_py.configuration import FlashParams
+from iris_pse_detection.flash import RelativeLuminance, RedSaturation, Flash
+from iris_pse_detection.configuration import FlashParams
 
 
 class TestRelativeLuminance:

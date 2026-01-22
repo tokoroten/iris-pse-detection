@@ -2,7 +2,7 @@
 """Example with progress callback and custom configuration."""
 
 import sys
-from iris_py import VideoAnalyser, Configuration
+from iris_pse_detection import VideoAnalyser, Configuration
 
 
 def progress_callback(progress: float) -> None:

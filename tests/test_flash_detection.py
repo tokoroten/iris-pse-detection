@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for FlashDetection class."""
@@ -6,9 +6,9 @@
 import numpy as np
 import pytest
 
-from iris_py.flash_detection import FlashDetection
-from iris_py.configuration import Configuration
-from iris_py.result import FlashResult
+from iris_pse_detection.flash_detection import FlashDetection
+from iris_pse_detection.configuration import Configuration
+from iris_pse_detection.result import FlashResult
 
 
 class TestFlashDetection:

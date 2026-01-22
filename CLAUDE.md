@@ -31,7 +31,7 @@ uv build
 ## アーキテクチャ
 
 ```
-src/iris_py/
+src/iris_pse_detection/
 ├── __init__.py           # パッケージエクスポート
 ├── cli.py                # コマンドラインインターフェース
 ├── configuration.py      # 設定パラメータ

@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -11,9 +11,9 @@ from typing import List, Tuple, Optional
 import numpy as np
 import cv2
 
-from iris_py.configuration import PatternDetectionParams
-from iris_py.frame_data import FrameData, proportion_to_percentage
-from iris_py.result import PatternResult
+from iris_pse_detection.configuration import PatternDetectionParams
+from iris_pse_detection.frame_data import FrameData, proportion_to_percentage
+from iris_pse_detection.result import PatternResult
 
 
 @dataclass

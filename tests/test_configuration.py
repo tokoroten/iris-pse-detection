@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for Configuration class."""
@@ -6,7 +6,7 @@
 import numpy as np
 import pytest
 
-from iris_py.configuration import (
+from iris_pse_detection.configuration import (
     Configuration,
     FlashParams,
     TransitionTrackerParams,

@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -9,11 +9,11 @@
 from typing import Tuple
 import numpy as np
 
-from iris_py.configuration import Configuration
-from iris_py.flash import RelativeLuminance, RedSaturation, Flash
-from iris_py.frame_data import FrameData, proportion_to_percentage
-from iris_py.frame_rgb_converter import FrameRgbConverter
-from iris_py.transition_tracker import TransitionTracker
+from iris_pse_detection.configuration import Configuration
+from iris_pse_detection.flash import RelativeLuminance, RedSaturation, Flash
+from iris_pse_detection.frame_data import FrameData, proportion_to_percentage
+from iris_pse_detection.frame_rgb_converter import FrameRgbConverter
+from iris_pse_detection.transition_tracker import TransitionTracker
 
 
 class FlashDetection:

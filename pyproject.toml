@@ -1,6 +1,6 @@
 [project]
 name = "iris-pse-detection"
-version = "1.0.0"
+version = "1.1.0"
 description = "Python port of EA's IRIS - Photosensitive epilepsy risk detection for video content"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -42,14 +42,14 @@ dev = [
 ]
 
 [project.scripts]
-iris = "iris_py.cli:main"
+iris = "iris_pse_detection.cli:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/iris_py"]
+packages = ["src/iris_pse_detection"]
 
 [tool.ruff]
 line-length = 100

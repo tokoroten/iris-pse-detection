@@ -1,11 +1,11 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for Result types and enums."""
 
 import pytest
 
-from iris_py.result import (
+from iris_pse_detection.result import (
     FlashResult,
     PatternResult,
     AnalysisResult,

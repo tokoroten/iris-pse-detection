@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -15,10 +15,10 @@ A Python port of EA's IRIS library for detecting:
 that could potentially cause photosensitive epileptic risks.
 """
 
-from iris_py.video_analyser import VideoAnalyser
-from iris_py.configuration import Configuration
-from iris_py.frame_data import FrameData
-from iris_py.result import Result, AnalysisResult, FlashResult, PatternResult
+from iris_pse_detection.video_analyser import VideoAnalyser
+from iris_pse_detection.configuration import Configuration
+from iris_pse_detection.frame_data import FrameData
+from iris_pse_detection.result import Result, AnalysisResult, FlashResult, PatternResult
 
 __version__ = "1.0.0"
 __all__ = ["VideoAnalyser", "Configuration", "FrameData", "AnalysisResult", "Result"]

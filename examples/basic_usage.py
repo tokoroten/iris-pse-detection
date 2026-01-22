@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Basic usage example for IRIS-Py."""
 
-from iris_py import VideoAnalyser, Configuration
-from iris_py.result import AnalysisResult
+from iris_pse_detection import VideoAnalyser, Configuration
+from iris_pse_detection.result import AnalysisResult
 
 
 def main():

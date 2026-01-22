@@ -1,14 +1,14 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for TransitionTracker class."""
 
 import pytest
 
-from iris_py.transition_tracker import TransitionTracker, Counter, FlashResults
-from iris_py.configuration import TransitionTrackerParams
-from iris_py.frame_data import FrameData
-from iris_py.result import FlashResult
+from iris_pse_detection.transition_tracker import TransitionTracker, Counter, FlashResults
+from iris_pse_detection.configuration import TransitionTrackerParams
+from iris_pse_detection.frame_data import FrameData
+from iris_pse_detection.result import FlashResult
 
 
 class TestCounter:

@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 #
 # Based on IRIS by Electronic Arts Inc.
@@ -10,8 +10,8 @@ import argparse
 import sys
 from pathlib import Path
 
-from iris_py.configuration import Configuration
-from iris_py.video_analyser import VideoAnalyser
+from iris_pse_detection.configuration import Configuration
+from iris_pse_detection.video_analyser import VideoAnalyser
 
 
 def main():
@@ -121,7 +121,7 @@ def main():
             print(f"  Frame Data JSON: {analyser.frame_data_json_path}")
 
         # Exit with appropriate code
-        from iris_py.result import AnalysisResult
+        from iris_pse_detection.result import AnalysisResult
         if result.overall_result == AnalysisResult.Fail:
             sys.exit(1)
         elif result.overall_result == AnalysisResult.PassWithWarning:

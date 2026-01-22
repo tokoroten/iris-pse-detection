@@ -28,7 +28,7 @@ jobs:
         run: uv sync --all-extras
 
       - name: Run tests
-        run: uv run pytest tests/ -v --cov=iris_py --cov-report=xml
+        run: uv run pytest tests/ -v --cov=iris_pse_detection --cov-report=xml
 
       - name: Upload coverage
         uses: codecov/codecov-action@v4
@@ -69,4 +69,4 @@ jobs:
         run: uv sync --all-extras && uv pip install mypy
 
       - name: Run mypy
-        run: uv run mypy src/iris_py --ignore-missing-imports
+        run: uv run mypy src/iris_pse_detection --ignore-missing-imports

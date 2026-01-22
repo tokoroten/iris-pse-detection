@@ -1,4 +1,4 @@
-# Copyright (c) 2026 iris_py contributors
+# Copyright (c) 2026 iris_pse_detection contributors
 # SPDX-License-Identifier: MIT
 
 """Tests for FrameRgbConverter class."""
@@ -6,8 +6,8 @@
 import numpy as np
 import pytest
 
-from iris_py.frame_rgb_converter import FrameRgbConverter
-from iris_py.configuration import DEFAULT_SRGB_VALUES
+from iris_pse_detection.frame_rgb_converter import FrameRgbConverter
+from iris_pse_detection.configuration import DEFAULT_SRGB_VALUES
 
 
 class TestFrameRgbConverter:

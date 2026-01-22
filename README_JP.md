@@ -36,7 +36,7 @@ uv run iris video.mp4
 ### Python API
 
 ```python
-from iris_py import VideoAnalyser, Configuration
+from iris_pse_detection import VideoAnalyser, Configuration
 
 config = Configuration()
 analyser = VideoAnalyser(config)

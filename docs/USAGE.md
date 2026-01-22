@@ -50,7 +50,9 @@ elif result.overall_result == AnalysisResult.Fail:
 | `RedExtendedFlashFailure` | Red flash persisted for 4+ seconds |
 | `PatternFailure` | Failed due to dangerous spatial pattern |
 
-### Flash Result (Per Frame)
+### Flash Result (Per Frame) - `FlashResult`
+
+Used in `luminance_frame_result` and `red_frame_result`.
 
 | Value | Code | Meaning |
 |-------|------|---------|
@@ -59,7 +61,9 @@ elif result.overall_result == AnalysisResult.Fail:
 | `ExtendedFail` | 2 | Flash failure for 4+ seconds |
 | `FlashFail` | 3 | Flash detected in this frame |
 
-### Pattern Result (Per Frame)
+### Pattern Result (Per Frame) - `PatternResult`
+
+Used in `pattern_frame_result`.
 
 | Value | Code | Meaning |
 |-------|------|---------|

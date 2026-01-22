@@ -50,7 +50,9 @@ elif result.overall_result == AnalysisResult.Fail:
 | `RedExtendedFlashFailure` | 赤色フラッシュが4秒以上継続 |
 | `PatternFailure` | 危険なパターンによる不合格 |
 
-### フレームごとのフラッシュ結果
+### フレームごとのフラッシュ結果 - `FlashResult`
+
+`luminance_frame_result` と `red_frame_result` で使用されます。
 
 | 値 | コード | 意味 |
 |---|--------|------|
@@ -59,7 +61,9 @@ elif result.overall_result == AnalysisResult.Fail:
 | `ExtendedFail` | 2 | 4秒以上のフラッシュ不合格 |
 | `FlashFail` | 3 | このフレームでフラッシュ検出 |
 
-### フレームごとのパターン結果
+### フレームごとのパターン結果 - `PatternResult`
+
+`pattern_frame_result` で使用されます。
 
 | 値 | コード | 意味 |
 |---|--------|------|

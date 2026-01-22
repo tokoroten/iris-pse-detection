@@ -1,4 +1,7 @@
-# IRIS-Py
+# IRIS-PSE-Detection
+
+[![PyPI version](https://badge.fury.io/py/iris-pse-detection.svg)](https://pypi.org/project/iris-pse-detection/)
+[![CI](https://github.com/tokoroten/iris-py/actions/workflows/ci.yml/badge.svg)](https://github.com/tokoroten/iris-py/actions/workflows/ci.yml)
 
 [IRIS](https://github.com/electronicarts/IRIS) の Python 移植版 - Electronic Arts が開発した光過敏性てんかんリスク検出ライブラリです。
 
@@ -7,14 +10,14 @@ IRIS は、W3C WCAG および ISO 9241-391 のガイドラインに基づき、�
 ## インストール
 
 ```bash
-pip install iris-py
+pip install iris-pse-detection
 ```
 
 または開発用:
 
 ```bash
-git clone https://github.com/electronicarts/IRIS
-cd iris_py
+git clone https://github.com/tokoroten/iris-py
+cd iris-py
 uv sync
 ```
 

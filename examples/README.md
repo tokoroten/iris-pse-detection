@@ -1,4 +1,4 @@
-# IRIS-Py Examples
+# IRIS-PSE-Detection Examples
 
 ## basic_usage.py
 
